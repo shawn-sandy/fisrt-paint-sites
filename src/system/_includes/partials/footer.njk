@@ -1,0 +1,56 @@
+<footer>
+  <section>
+    <div role="list">
+      <div role="listitem">
+        <h6>
+          <a href="/" aria-label="Site logo">
+            <!-- <img src="/img/fp.svg" alt=""> -->
+            <!-- <span aria-label="logo text">{{ pkg.app.name }}</span> -->
+            <img
+              src="/images/dsp-kit-white.svg"
+              alt="DSP Kit"
+              class="brand-icon"
+            />
+          </a>
+        </h6>
+        <!-- <h6>{{ pkg.app.name }}</h6> -->
+      </div>
+      <div role="listitem">
+        <h6 id="navigate">Navigate</h6>
+        <span>
+          <ul>
+            <li>
+              <a href="/tokens" title="Color tokens">Color</a>
+            </li>
+            <li><a href="/fonts" title="Font Tokens">Fonts</a></li>
+            <li>
+              <a href="/components" title="View components">Components</a>
+            </li>
+            <li><a href="/docs">Guide</a></li>
+            <li><a href="/changelog">Changes</a></li>
+            <li>
+              <a href="{{ pkg.homepage }}" target="_blank" rel="noopener"
+                >Github</a
+              >
+            </li>
+          </ul>
+        </span>
+      </div>
+      <div role="listitem">
+        <!-- <h6>About</h6> -->
+        <p>
+          {{ pkg.description }}
+        </p>
+      </div>
+    </div>
+    <section>
+      <span>
+        <p aria-label="copyright">
+          Copyright &copy {{ hlp.11ty.year() }} {{ pkg.author }}. All rights
+          reserved | {{ pkg.app.name }} {{ pkg.version }} ver | Licence
+          {{ pkg.license }}
+        </p>
+      </span>
+    </section>
+  </section>
+</footer>

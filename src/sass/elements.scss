@@ -1,0 +1,7 @@
+@use "@shawnsandy/first-paint/custom-styles.scss";
+
+a[role=button]>span {
+  &:hover {
+    background-color: white;
+  }
+}
